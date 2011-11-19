@@ -15,6 +15,8 @@
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
+@synthesize rootViewController;
+
 - (void)dealloc
 {
     [_window release];
@@ -28,7 +30,15 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    RootViewController *rvc = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+    rvc.managedObjectContext = self.managedObjectContext;
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:rvc];
+    self.window.rootViewController = nc;
+    
+    [rvc release];
+    [nc release];
+    
+    self.window.backgroundColor = [UIColor grayColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
