@@ -13,6 +13,7 @@
     IBOutlet UITextField *onURL;
     IBOutlet UITextField *offURL;
     
+    NSMutableArray *controlsArray;
     NSManagedObjectContext *managedObjectContext;
 }
 
@@ -20,8 +21,7 @@
 @property (atomic, retain) UITextField *onURL;
 @property (atomic, retain) UITextField *offURL;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-
-
+@property (atomic, retain) NSMutableArray *controlsArray;
 
 
 -(IBAction) saveControl:(id)sender;

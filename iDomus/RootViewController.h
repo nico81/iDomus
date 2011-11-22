@@ -8,12 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class Control;
+
 @interface RootViewController : UITableViewController {
-   // NSMutableArray *controlsArray;
+    NSMutableArray *controlsArray;
     NSManagedObjectContext *managedObjectContext;
+    IBOutlet UITableView *myTableView;
 }
 
 @property (atomic, retain) NSMutableArray *controlsArray;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+
+-(void) addControl:(Control *) control;
 
 @end

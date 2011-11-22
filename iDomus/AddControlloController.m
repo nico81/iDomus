@@ -13,6 +13,7 @@
 @implementation AddControlloController
 
 @synthesize managedObjectContext;
+@synthesize controlsArray;
 
 @synthesize name;
 @synthesize onURL;
@@ -52,6 +53,16 @@
     self.onURL = nil;
     self.offURL = nil;
     self.managedObjectContext = nil;
+    self.controlsArray = nil;
+}
+
+-(void) dealloc {
+    [name release];
+    [onURL release];
+    [offURL release];
+    [managedObjectContext release];
+    [controlsArray release];
+    [super dealloc];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -62,29 +73,51 @@
 
 
 -(IBAction) saveControl:(id)sender {
-    NSLog(@"Called");
-        
-    Control* control = (Control *)[NSEntityDescription insertNewObjectForEntityForName:@"Control" inManagedObjectContext:managedObjectContext];
-        
-    control.name = self.name.text;
-    control.urlOn = self.onURL.text;
-    control.urlOff = self.offURL.text;
-    control.creationDate = [NSDate date];
+    NSLog(@"AddControlloController.ssaveControl Called");
     
-    NSError *error = nil;
-    if(![managedObjectContext save:&error]) {
-        NSLog(@"errore in insert");
+    BOOL dataNotValid = NO;
+    
+    if([self.name.text length] == 0) {
+        self.name.placeholder = @"Name is required!";
+        dataNotValid = YES;
+    } else {
+        self.name.placeholder = @"Name";
     }
     
-    RootViewController *rvc =(RootViewController *)[self.navigationController popViewControllerAnimated:YES];
-    [rvc.controlsArray insertObject:control atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [rvc.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    [rvc.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    if([self.onURL.text length] == 0) {
+        self.onURL.placeholder = @"URL to turn on is required!";
+        dataNotValid = dataNotValid || YES;
+    } else {
+        self.onURL.placeholder = @"URL to turn on";
+    }
+    
+    if([self.offURL.text length] == 0) {
+        self.offURL.placeholder= @"URL to turn off is required!";
+        dataNotValid = dataNotValid || YES;
+    } else {
+        self.offURL.placeholder= @"URL to turn off";
+    }
+    
+    
+    if(!dataNotValid) {
+        Control *control = (Control *)[NSEntityDescription insertNewObjectForEntityForName:@"Control" inManagedObjectContext:managedObjectContext];
+    
+        control.name = self.name.text;
+        control.urlOn = self.onURL.text;
+        control.urlOff = self.offURL.text;
+        control.creationDate = [NSDate date];
+    
+        NSError *error = nil;
+        if(![managedObjectContext save:&error]) {
+            NSLog(@"errore in insert %@", error);
+        }
+        
+        [self.controlsArray insertObject:control atIndex:0];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 -(IBAction)editingEnded:(id)sender{
-    NSLog(@"hello!");
     [sender resignFirstResponder]; 
 }
 
