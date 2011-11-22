@@ -7,113 +7,113 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3071B8E2146B04BC007088D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3071B8E1146B04BC007088D4 /* UIKit.framework */; };
-		3071B8E4146B04BC007088D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3071B8E3146B04BC007088D4 /* Foundation.framework */; };
-		3071B8E6146B04BC007088D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3071B8E5146B04BC007088D4 /* CoreGraphics.framework */; };
-		3071B8EC146B04BC007088D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3071B8EA146B04BC007088D4 /* InfoPlist.strings */; };
-		3071B8EE146B04BC007088D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071B8ED146B04BC007088D4 /* main.m */; };
-		3071B8F2146B04BC007088D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071B8F1146B04BC007088D4 /* AppDelegate.m */; };
-		3071B8F5146B04BC007088D4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071B8F4146B04BC007088D4 /* FirstViewController.m */; };
-		3071B8F7146B04BC007088D4 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 3071B8F6146B04BC007088D4 /* first.png */; };
-		3071B8F9146B04BC007088D4 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3071B8F8146B04BC007088D4 /* first@2x.png */; };
-		3071B8FC146B04BC007088D4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071B8FB146B04BC007088D4 /* SecondViewController.m */; };
-		3071B8FE146B04BC007088D4 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 3071B8FD146B04BC007088D4 /* second.png */; };
-		3071B900146B04BC007088D4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3071B8FF146B04BC007088D4 /* second@2x.png */; };
-		3071B903146B04BC007088D4 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3071B901146B04BC007088D4 /* FirstViewController.xib */; };
-		3071B906146B04BC007088D4 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3071B904146B04BC007088D4 /* SecondViewController.xib */; };
+		3046E0AC1477C45B004F5FD2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046E0AA1477C45B004F5FD2 /* RootViewController.m */; };
+		3046E0AD1477C45B004F5FD2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3046E0AB1477C45B004F5FD2 /* RootViewController.xib */; };
+		3046E0B61477CE71004F5FD2 /* AddControlloController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046E0B41477CE71004F5FD2 /* AddControlloController.m */; };
+		3046E0B71477CE71004F5FD2 /* AddControlloController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3046E0B51477CE71004F5FD2 /* AddControlloController.xib */; };
+		3046E0BA1477E7DE004F5FD2 /* Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046E0B91477E7DE004F5FD2 /* Control.m */; };
+		306F34581477C243006170F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306F34571477C243006170F9 /* UIKit.framework */; };
+		306F345A1477C243006170F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306F34591477C243006170F9 /* Foundation.framework */; };
+		306F345C1477C243006170F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306F345B1477C243006170F9 /* CoreGraphics.framework */; };
+		306F345E1477C243006170F9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306F345D1477C243006170F9 /* CoreData.framework */; };
+		306F34641477C243006170F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 306F34621477C243006170F9 /* InfoPlist.strings */; };
+		306F34661477C243006170F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 306F34651477C243006170F9 /* main.m */; };
+		306F346A1477C243006170F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306F34691477C243006170F9 /* AppDelegate.m */; };
+		306F346D1477C243006170F9 /* iDomus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 306F346B1477C243006170F9 /* iDomus.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3071B8DD146B04BC007088D4 /* iDomus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDomus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3071B8E1146B04BC007088D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		3071B8E3146B04BC007088D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3071B8E5146B04BC007088D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3071B8E9146B04BC007088D4 /* iDomus-Info.plist */ = {isa = PBXFileReference; path = "iDomus-Info.plist"; sourceTree = "<group>"; };
-		3071B8EB146B04BC007088D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3071B8ED146B04BC007088D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3071B8EF146B04BC007088D4 /* iDomus-Prefix.pch */ = {isa = PBXFileReference; path = "iDomus-Prefix.pch"; sourceTree = "<group>"; };
-		3071B8F0146B04BC007088D4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
-		3071B8F1146B04BC007088D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3071B8F3146B04BC007088D4 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
-		3071B8F4146B04BC007088D4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		3071B8F6146B04BC007088D4 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		3071B8F8146B04BC007088D4 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		3071B8FA146B04BC007088D4 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
-		3071B8FB146B04BC007088D4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		3071B8FD146B04BC007088D4 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		3071B8FF146B04BC007088D4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		3071B902146B04BC007088D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
-		3071B905146B04BC007088D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		3046E0A91477C45B004F5FD2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		3046E0AA1477C45B004F5FD2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		3046E0AB1477C45B004F5FD2 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		3046E0B31477CE71004F5FD2 /* AddControlloController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddControlloController.h; sourceTree = "<group>"; };
+		3046E0B41477CE71004F5FD2 /* AddControlloController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddControlloController.m; sourceTree = "<group>"; };
+		3046E0B51477CE71004F5FD2 /* AddControlloController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddControlloController.xib; sourceTree = "<group>"; };
+		3046E0B81477E7DE004F5FD2 /* Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Control.h; sourceTree = "<group>"; };
+		3046E0B91477E7DE004F5FD2 /* Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Control.m; sourceTree = "<group>"; };
+		306F34531477C243006170F9 /* iDomus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDomus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		306F34571477C243006170F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		306F34591477C243006170F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		306F345B1477C243006170F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		306F345D1477C243006170F9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		306F34611477C243006170F9 /* iDomus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iDomus-Info.plist"; sourceTree = "<group>"; };
+		306F34631477C243006170F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		306F34651477C243006170F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		306F34671477C243006170F9 /* iDomus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iDomus-Prefix.pch"; sourceTree = "<group>"; };
+		306F34681477C243006170F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		306F34691477C243006170F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		306F346C1477C243006170F9 /* iDomus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iDomus.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3071B8DA146B04BC007088D4 /* Frameworks */ = {
+		306F34501477C243006170F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3071B8E2146B04BC007088D4 /* UIKit.framework in Frameworks */,
-				3071B8E4146B04BC007088D4 /* Foundation.framework in Frameworks */,
-				3071B8E6146B04BC007088D4 /* CoreGraphics.framework in Frameworks */,
+				306F34581477C243006170F9 /* UIKit.framework in Frameworks */,
+				306F345A1477C243006170F9 /* Foundation.framework in Frameworks */,
+				306F345C1477C243006170F9 /* CoreGraphics.framework in Frameworks */,
+				306F345E1477C243006170F9 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3071B8D2146B04BC007088D4 = {
+		306F34481477C243006170F9 = {
 			isa = PBXGroup;
 			children = (
-				3071B8E7146B04BC007088D4 /* iDomus */,
-				3071B8E0146B04BC007088D4 /* Frameworks */,
-				3071B8DE146B04BC007088D4 /* Products */,
+				306F345F1477C243006170F9 /* iDomus */,
+				306F34561477C243006170F9 /* Frameworks */,
+				306F34541477C243006170F9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3071B8DE146B04BC007088D4 /* Products */ = {
+		306F34541477C243006170F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3071B8DD146B04BC007088D4 /* iDomus.app */,
+				306F34531477C243006170F9 /* iDomus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3071B8E0146B04BC007088D4 /* Frameworks */ = {
+		306F34561477C243006170F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3071B8E1146B04BC007088D4 /* UIKit.framework */,
-				3071B8E3146B04BC007088D4 /* Foundation.framework */,
-				3071B8E5146B04BC007088D4 /* CoreGraphics.framework */,
+				306F34571477C243006170F9 /* UIKit.framework */,
+				306F34591477C243006170F9 /* Foundation.framework */,
+				306F345B1477C243006170F9 /* CoreGraphics.framework */,
+				306F345D1477C243006170F9 /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3071B8E7146B04BC007088D4 /* iDomus */ = {
+		306F345F1477C243006170F9 /* iDomus */ = {
 			isa = PBXGroup;
 			children = (
-				3071B8F0146B04BC007088D4 /* AppDelegate.h */,
-				3071B8F1146B04BC007088D4 /* AppDelegate.m */,
-				3071B8F3146B04BC007088D4 /* FirstViewController.h */,
-				3071B8F4146B04BC007088D4 /* FirstViewController.m */,
-				3071B8F6146B04BC007088D4 /* first.png */,
-				3071B8F8146B04BC007088D4 /* first@2x.png */,
-				3071B8FA146B04BC007088D4 /* SecondViewController.h */,
-				3071B8FB146B04BC007088D4 /* SecondViewController.m */,
-				3071B8FD146B04BC007088D4 /* second.png */,
-				3071B8FF146B04BC007088D4 /* second@2x.png */,
-				3071B901146B04BC007088D4 /* FirstViewController.xib */,
-				3071B904146B04BC007088D4 /* SecondViewController.xib */,
-				3071B8E8146B04BC007088D4 /* Supporting Files */,
+				306F34681477C243006170F9 /* AppDelegate.h */,
+				306F34691477C243006170F9 /* AppDelegate.m */,
+				3046E0A91477C45B004F5FD2 /* RootViewController.h */,
+				3046E0AA1477C45B004F5FD2 /* RootViewController.m */,
+				3046E0AB1477C45B004F5FD2 /* RootViewController.xib */,
+				3046E0B31477CE71004F5FD2 /* AddControlloController.h */,
+				3046E0B41477CE71004F5FD2 /* AddControlloController.m */,
+				3046E0B51477CE71004F5FD2 /* AddControlloController.xib */,
+				306F346B1477C243006170F9 /* iDomus.xcdatamodeld */,
+				3046E0B81477E7DE004F5FD2 /* Control.h */,
+				3046E0B91477E7DE004F5FD2 /* Control.m */,
+				306F34601477C243006170F9 /* Supporting Files */,
 			);
 			path = iDomus;
 			sourceTree = "<group>";
 		};
-		3071B8E8146B04BC007088D4 /* Supporting Files */ = {
+		306F34601477C243006170F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3071B8E9146B04BC007088D4 /* iDomus-Info.plist */,
-				3071B8EA146B04BC007088D4 /* InfoPlist.strings */,
-				3071B8ED146B04BC007088D4 /* main.m */,
-				3071B8EF146B04BC007088D4 /* iDomus-Prefix.pch */,
+				306F34611477C243006170F9 /* iDomus-Info.plist */,
+				306F34621477C243006170F9 /* InfoPlist.strings */,
+				306F34651477C243006170F9 /* main.m */,
+				306F34671477C243006170F9 /* iDomus-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -121,13 +121,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3071B8DC146B04BC007088D4 /* iDomus */ = {
+		306F34521477C243006170F9 /* iDomus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3071B909146B04BC007088D4 /* Build configuration list for PBXNativeTarget "iDomus" */;
+			buildConfigurationList = 306F34701477C243006170F9 /* Build configuration list for PBXNativeTarget "iDomus" */;
 			buildPhases = (
-				3071B8D9146B04BC007088D4 /* Sources */,
-				3071B8DA146B04BC007088D4 /* Frameworks */,
-				3071B8DB146B04BC007088D4 /* Resources */,
+				306F344F1477C243006170F9 /* Sources */,
+				306F34501477C243006170F9 /* Frameworks */,
+				306F34511477C243006170F9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -135,94 +135,76 @@
 			);
 			name = iDomus;
 			productName = iDomus;
-			productReference = 3071B8DD146B04BC007088D4 /* iDomus.app */;
+			productReference = 306F34531477C243006170F9 /* iDomus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3071B8D4146B04BC007088D4 /* Project object */ = {
+		306F344A1477C243006170F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 3071B8D7146B04BC007088D4 /* Build configuration list for PBXProject "iDomus" */;
+			buildConfigurationList = 306F344D1477C243006170F9 /* Build configuration list for PBXProject "iDomus" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 3071B8D2146B04BC007088D4;
-			productRefGroup = 3071B8DE146B04BC007088D4 /* Products */;
+			mainGroup = 306F34481477C243006170F9;
+			productRefGroup = 306F34541477C243006170F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3071B8DC146B04BC007088D4 /* iDomus */,
+				306F34521477C243006170F9 /* iDomus */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3071B8DB146B04BC007088D4 /* Resources */ = {
+		306F34511477C243006170F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3071B8EC146B04BC007088D4 /* InfoPlist.strings in Resources */,
-				3071B8F7146B04BC007088D4 /* first.png in Resources */,
-				3071B8F9146B04BC007088D4 /* first@2x.png in Resources */,
-				3071B8FE146B04BC007088D4 /* second.png in Resources */,
-				3071B900146B04BC007088D4 /* second@2x.png in Resources */,
-				3071B903146B04BC007088D4 /* FirstViewController.xib in Resources */,
-				3071B906146B04BC007088D4 /* SecondViewController.xib in Resources */,
+				306F34641477C243006170F9 /* InfoPlist.strings in Resources */,
+				3046E0AD1477C45B004F5FD2 /* RootViewController.xib in Resources */,
+				3046E0B71477CE71004F5FD2 /* AddControlloController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3071B8D9146B04BC007088D4 /* Sources */ = {
+		306F344F1477C243006170F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3071B8EE146B04BC007088D4 /* main.m in Sources */,
-				3071B8F2146B04BC007088D4 /* AppDelegate.m in Sources */,
-				3071B8F5146B04BC007088D4 /* FirstViewController.m in Sources */,
-				3071B8FC146B04BC007088D4 /* SecondViewController.m in Sources */,
+				306F34661477C243006170F9 /* main.m in Sources */,
+				306F346A1477C243006170F9 /* AppDelegate.m in Sources */,
+				306F346D1477C243006170F9 /* iDomus.xcdatamodeld in Sources */,
+				3046E0AC1477C45B004F5FD2 /* RootViewController.m in Sources */,
+				3046E0B61477CE71004F5FD2 /* AddControlloController.m in Sources */,
+				3046E0BA1477E7DE004F5FD2 /* Control.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3071B8EA146B04BC007088D4 /* InfoPlist.strings */ = {
+		306F34621477C243006170F9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3071B8EB146B04BC007088D4 /* en */,
+				306F34631477C243006170F9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3071B901146B04BC007088D4 /* FirstViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3071B902146B04BC007088D4 /* en */,
-			);
-			name = FirstViewController.xib;
-			sourceTree = "<group>";
-		};
-		3071B904146B04BC007088D4 /* SecondViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3071B905146B04BC007088D4 /* en */,
-			);
-			name = SecondViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3071B907146B04BC007088D4 /* Debug */ = {
+		306F346E1477C243006170F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +228,7 @@
 			};
 			name = Debug;
 		};
-		3071B908146B04BC007088D4 /* Release */ = {
+		306F346F1477C243006170F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -265,7 +247,7 @@
 			};
 			name = Release;
 		};
-		3071B90A146B04BC007088D4 /* Debug */ = {
+		306F34711477C243006170F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -276,7 +258,7 @@
 			};
 			name = Debug;
 		};
-		3071B90B146B04BC007088D4 /* Release */ = {
+		306F34721477C243006170F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -290,24 +272,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3071B8D7146B04BC007088D4 /* Build configuration list for PBXProject "iDomus" */ = {
+		306F344D1477C243006170F9 /* Build configuration list for PBXProject "iDomus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3071B907146B04BC007088D4 /* Debug */,
-				3071B908146B04BC007088D4 /* Release */,
+				306F346E1477C243006170F9 /* Debug */,
+				306F346F1477C243006170F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3071B909146B04BC007088D4 /* Build configuration list for PBXNativeTarget "iDomus" */ = {
+		306F34701477C243006170F9 /* Build configuration list for PBXNativeTarget "iDomus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3071B90A146B04BC007088D4 /* Debug */,
-				3071B90B146B04BC007088D4 /* Release */,
+				306F34711477C243006170F9 /* Debug */,
+				306F34721477C243006170F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		306F346B1477C243006170F9 /* iDomus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				306F346C1477C243006170F9 /* iDomus.xcdatamodel */,
+			);
+			currentVersion = 306F346C1477C243006170F9 /* iDomus.xcdatamodel */;
+			path = iDomus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 3071B8D4146B04BC007088D4 /* Project object */;
+	rootObject = 306F344A1477C243006170F9 /* Project object */;
 }

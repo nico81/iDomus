@@ -2,16 +2,24 @@
 //  AppDelegate.h
 //  iDomus
 //
-//  Created by Giuseppe Acito on 09/11/11.
+//  Created by Giuseppe Acito on 19/11/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "RootViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    RootViewController *rootViewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) UITabBarController *tabBarController;
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (atomic, retain) RootViewController *rootViewController;
+- (void)saveContext;
+- (NSURL *)applicationDocumentsDirectory;
 
 @end
