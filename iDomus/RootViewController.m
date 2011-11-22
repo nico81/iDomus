@@ -53,6 +53,7 @@
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"creationDate" ascending:NO];
     NSArray *sortDescriptors = [ NSArray arrayWithObjects:sortDescriptor, nil];
     [request setSortDescriptors:sortDescriptors];
+    [sortDescriptor release];
     
     //executing Query
     NSError *error = nil;
