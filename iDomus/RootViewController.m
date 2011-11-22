@@ -182,7 +182,7 @@
     
     Control *control = [controlsArray objectAtIndex:interruttore.tag];
     
-    NSURL *url;
+    NSURL *url = nil;
     
     if(interruttore.on) {
         url = [NSURL URLWithString:control.urlOn];
@@ -191,7 +191,7 @@
     }
     
     NSError *error = nil;
-    [NSString stringWithContentsOfURL:[NSURL URLWithString:control.urlOn] encoding:NSUnicodeStringEncoding error:&error];
+    [NSString stringWithContentsOfURL:url encoding:NSUnicodeStringEncoding error:&error];
     if(error) {
         NSLog(@"Errore %@", error);
     }
